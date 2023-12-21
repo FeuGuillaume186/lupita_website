@@ -1,0 +1,18 @@
+/* tablet verion */
+
+@media screen and (min-width: 744px) {
+    #home {
+        padding: 6rem;
+        padding-bottom: 0;
+    }
+
+    #home .welcome-n-portfolio {
+        gap: 3.25rem;
+    }
+
+    #about {
+        padding: 6rem;
+        gap: 5rem;
+    }
+
+}

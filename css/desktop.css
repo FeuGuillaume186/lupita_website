@@ -1,6 +1,6 @@
 /* desktop version */
 
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) { */
     header .content {
         /* layout */
         display: flex;
@@ -72,10 +72,11 @@
         flex-direction: column;
 
         width: 100vw;
-        height: 59.25rem;
+        /* height: 59.25rem; */
         flex-shrink: 0;
         overflow: hidden;
         padding: 8rem;
+        padding-bottom: 0;
 
         /* style */
         background: var(--home-background);
@@ -84,6 +85,7 @@
     #home .welcome-n-portfolio {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     #home .welcome-message {
@@ -334,9 +336,11 @@
         /* layout */
         display: flex;
         align-items: center;
-        gap: 13.25rem;
+        justify-content: space-between;
+        /* gap: 13.25rem; */
+        flex-wrap: wrap;
         width: 100vw;
-        height: 59.25rem;
+        /* height: 59.25rem; */
         flex-shrink: 0;
         padding: 8rem;
         overflow: hidden;
@@ -363,6 +367,8 @@
     }
 
     #about .text .about-text {
+        width: 32.4375rem;
+
         color: #868A98;
         font-size: 0.9375rem;
         font-weight: 400;
@@ -396,10 +402,11 @@
         gap: 4.06rem;
 
         width: 100vw;
-        height: 65.875rem;
+        /* height: 65.875rem; */
         flex-shrink: 0;
         overflow: hidden;
         padding: 8rem;
+        padding-bottom: 3rem;
 
         /* style */
         background: var(--services-background);
@@ -546,6 +553,7 @@
         /* layout */
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         width: 100vw;
         height: 30rem;
@@ -731,4 +739,4 @@
         flex-shrink: 0;
     }
 
-}
+/* } */

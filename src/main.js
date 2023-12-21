@@ -66,6 +66,42 @@ const OUR_PORTFOLIO = [
         title: 'Nous deux',
         desc: 'La poesie dans le sang'
     },
+    {
+        id: 'portfolio_09',
+        img_link: '../assets/images/portfolio/portfolio_img_09.jpg',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
+    {
+        id: 'portfolio_10',
+        img_link: '../assets/images/portfolio/portfolio_img_10.png',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
+    {
+        id: 'portfolio_11',
+        img_link: '../assets/images/portfolio/portfolio_img_11.png',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
+    {
+        id: 'portfolio_12',
+        img_link: '../assets/images/portfolio/portfolio_img_12.png',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
+    {
+        id: 'portfolio_13',
+        img_link: '../assets/images/portfolio/portfolio_img_13.png',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
+    {
+        id: 'portfolio_14',
+        img_link: '../assets/images/portfolio/portfolio_img_14.png',
+        title: 'Portfolio',
+        desc: 'A web site for design'
+    },
 ];
 
 const posters = document.querySelectorAll('#home .portfolio-slider .poster');
