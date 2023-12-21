@@ -1,0 +1,412 @@
+/* desktop version */
+
+@media screen and (min-width: 1024px) {
+    header .content {
+        /* layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100vw;
+        height: 4.75rem;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        padding: 0 5.75rem 0 5.75rem;
+
+        /* style */
+        background: var(--header-background);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .header-title {
+        width: fit-content;
+
+        /* style */
+        color: #FFF;
+
+        /* typo */
+        font-size: 1.375rem;        
+        font-weight: 700;
+    }
+    .header-title span {
+        color: #8D8D8D;
+        font-weight: 400;
+    }
+
+    /* Nav menu
+    -------------------- */
+    nav {
+        width: fit-content;
+        /* border: 1px solid green; */
+    }
+    nav .menu {
+        display: flex;
+        gap: 2rem;
+        
+        list-style: none;
+    }
+    nav .menu li a{
+        color: #D4D4D4;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        letter-spacing: 0.05313rem;
+    }
+    nav .menu li a:hover,
+    nav .menu li.active a {
+        color: #73FF92;
+        font-weight: 600;
+        /* text-decoration-line: underline; */
+        cursor: pointer;
+        border-bottom: 1px solid #73FF92;
+    }
+
+    /* HOME SECTION
+    ---------------
+    
+    */
+
+    #home {
+        /* layout */
+        display: flex;
+        flex-direction: column;
+
+        width: 100vw;
+        height: 59.25rem;
+        flex-shrink: 0;
+        overflow: hidden;
+        padding: 8rem;
+
+        /* style */
+        background: var(--home-background);
+    }
+
+    #home .welcome-n-portfolio {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #home .welcome-message {
+        width: 30.125rem;
+        margin-bottom: 3.06rem;
+
+        /* typo */
+        font-size: 1.25rem;
+        font-weight: 100;
+        letter-spacing: 0.0625rem;
+    }
+    #home .welcome-message .hello {
+        font-size: 3.75rem;
+        font-weight: 400;
+        letter-spacing: 0.1875rem;
+    }
+    #home .welcome-message .weAre {
+        font-size: 3.75rem;
+        letter-spacing: 0.1875rem;
+    }    
+    #home .welcome-message .lupita {
+        font-size: 4.625rem;
+        font-weight: 600;
+        letter-spacing: 0.23125rem;
+    }    
+    #home .welcome-message .bold {
+        font-weight: 400;
+    }
+
+    #home button {
+        padding: 1.3rem;
+
+        /* style */
+        border: none;
+        border-radius: 0.625rem;
+        background: #3BE05F;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        /* typo */
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+    }
+    #home button:hover {
+        background: #33c051;
+        cursor: pointer;
+    }
+    #home button:active {
+        background: #3ad65c;
+    }
+
+    #home .portfolio-slider {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .portfolio-slider .poster {
+        /* layout */
+        width: 40.3125rem;
+        height: 21.5rem;
+        flex-shrink: 0;
+
+        /* style */
+        border-radius: 1.875rem 1.875rem 0rem 0rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transition: all 2.5s;
+    }
+
+    #home .portfolio-slider .top-poster {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    #home .portfolio-slider .top-poster .elements {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 11.75rem;
+        padding: 1rem;
+    }
+
+    #home .portfolio-slider .top-poster .elements .arrows {
+        display: flex;
+        justify-content: space-between;
+    }
+    #home .portfolio-slider .top-poster .elements .arrows .left-arrow,
+    #home .portfolio-slider .top-poster .elements .arrows .right-arrow {
+        opacity: .3;
+        cursor: pointer;
+    }
+    #home .portfolio-slider .top-poster .elements .arrows .left-arrow:hover,
+    #home .portfolio-slider .top-poster .elements .arrows .right-arrow:hover {
+        opacity: .7;
+    }
+
+    #home .portfolio-slider .top-poster .elements .image-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #home .portfolio-slider .top-poster .elements .image-meta .label {
+        text-align: right;
+    }
+
+    #home .portfolio-slider .top-poster .elements .image-meta .label span {
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 0.05rem;
+    }
+
+    #home .portfolio-slider .bottom-poster {
+        transform: rotate(180deg) scaleX(-1);
+        opacity: .1;
+    }
+
+    #home .portfolio-slider .bottom-poster .gradient-bloc {
+        position: relative;
+        bottom: 0;
+        width: 41.3125rem;
+        height: 14.375rem;
+        flex-shrink: 0;
+
+        background: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #25262A 68.75%);
+    }
+
+    #home .developers-list {
+        position: relative;
+        bottom: 115px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #home .developers-list .horizontal-bar {
+        width: 8.1875rem;
+        height: 0.1875rem;
+        flex-shrink: 0;
+
+        background: #3BE05F;
+    }
+
+    #home .developers-list .developers {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 3.5rem;
+        column-gap: 7rem;
+    }
+
+    #home .developers-list .developers .dev {
+        display: flex;
+        gap: 1.75rem;
+    }
+
+    #home .developers-list .developers .dev .photo {
+        width: 3.6875rem;
+        height: 3.6875rem;
+        flex-shrink: 0;
+
+        border-radius: 3.6875rem;
+    }
+    #home .developers-list .developers .dev:nth-child(1) .photo {
+        background: url(../assets/images/developers/llaume.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+    #home .developers-list .developers .dev:nth-child(2) .photo {
+        background: url(../assets/images/developers/jadebravo6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+    #home .developers-list .developers .dev:nth-child(3) .photo {
+        background: url(../assets/images/developers/caesar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+
+    #home .developers-list .developers .dev .dev-info {
+        position: relative;
+        top: 9px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.37rem;
+    }
+    #home .developers-list .developers .dev .dev-info .text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #home .developers-list .developers .dev .dev-info .text .names {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        letter-spacing: 0.13125rem;
+    }
+    #home .developers-list .developers .dev .dev-info .text .role {
+        color: #3BE05F;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: 0.105rem;
+    }
+    #home .developers-list .developers .dev .dev-info .dev-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.09rem;
+    }
+
+    #home .developers-list .developers .dev .dev-info .dev-skills .skill {
+        width: 2.04244rem;
+        height: 2.04244rem;
+        flex-shrink: 0;
+    }
+    #home .developers-list .developers .dev .dev-info .dev-skills .skill.javascript {
+        background: url(../assets/images/JavaScript_icon_32x32.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #home .developers-list .developers .dev .dev-info .dev-skills .skill.php {
+        background: url(../assets/images/PHP_icon_32x32.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #home .developers-list .developers .dev .dev-info .dev-skills .skill.python {
+        background: url(../assets/images/Python_icon_32x32.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #home .developers-list .developers .dev .dev-info .dev-skills .skill.db-admin {
+        background: url(../assets/images/Database\ Administrator_icon_32x32.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    /* ABOUT SECTION
+    ----------------
+    
+    */
+    #about {
+        /* layout */
+        display: flex;
+        align-items: center;
+        gap: 13.25rem;
+        width: 100vw;
+        height: 59.25rem;
+        flex-shrink: 0;
+        padding: 8rem;
+        overflow: hidden;
+
+        /* style */
+        background: var(--about-background);
+    }
+
+    #about .lupita-logo {
+        width: 28.47544rem;
+        height: 35.21225rem;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    #about .text .about-title {
+        font-size: 3.125rem;
+        font-weight: 400;
+        letter-spacing: 0.15625rem;
+        text-transform: uppercase;
+
+        margin-bottom: 1.94rem
+    }
+
+    #about .text .about-text {
+        color: #868A98;
+        font-size: 0.9375rem;
+        font-weight: 400;
+
+        margin-bottom: 3.94rem;
+    }
+
+    #about .text .email {
+        color: #3BE05F;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        letter-spacing: 0.13125rem;
+        text-decoration-line: underline;
+    }
+    #about .text .email:hover {
+        color: #33c051;
+    }
+    #about .text .email:active {
+        color: #3BE05F;
+    }
+
+
+
+
+    #services {
+        /* layout */
+        width: 100vw;
+        height: 65.875rem;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        /* style */
+        background: var(--services-background);
+    }
+
+    footer {
+        /* layout */
+        width: 100vw;
+        height: 25.25rem;
+        flex-shrink: 0;
+
+        overflow: hidden;
+
+        /* style */
+        background: var(--footer-background);
+    }
+
+}
