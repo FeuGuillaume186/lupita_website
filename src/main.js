@@ -139,3 +139,19 @@ left_arrow.onclick = () => {
 
 // lancement du slider
 slide_anim();
+
+
+// On typing animation
+const textElement = document.querySelector('#about .text .about-text');
+const cursorElement = document.getElementById('cursor');
+
+// Initial hide of the cursor
+cursorElement.style.display = 'none';
+
+// Show the cursor after text is fully typed
+textElement.addEventListener('animationiteration', function () {
+    cursorElement.style.display = 'none';
+    setTimeout(function () {
+        cursorElement.style.display = 'inline-block';
+    }, 500);
+});

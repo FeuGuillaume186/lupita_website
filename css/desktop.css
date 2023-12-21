@@ -303,22 +303,22 @@
         height: 2.04244rem;
         flex-shrink: 0;
     }
-    #home .developers-list .developers .dev .dev-info .dev-skills .skill.javascript {
+    .javascript {
         background: url(../assets/images/JavaScript_icon_32x32.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #home .developers-list .developers .dev .dev-info .dev-skills .skill.php {
+    .php {
         background: url(../assets/images/PHP_icon_32x32.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #home .developers-list .developers .dev .dev-info .dev-skills .skill.python {
+    .python {
         background: url(../assets/images/Python_icon_32x32.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    #home .developers-list .developers .dev .dev-info .dev-skills .skill.db-admin {
+    .db-admin {
         background: url(../assets/images/Database\ Administrator_icon_32x32.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -357,8 +357,9 @@
         font-weight: 400;
         letter-spacing: 0.15625rem;
         text-transform: uppercase;
+        width: fit-content;
 
-        margin-bottom: 1.94rem
+        margin-bottom: 1.94rem;
     }
 
     #about .text .about-text {
@@ -385,28 +386,349 @@
 
 
 
-
+    /* SERVICES
+    -----------
+     */
     #services {
         /* layout */
+        display: flex;
+        flex-direction: column;
+        gap: 4.06rem;
+
         width: 100vw;
         height: 65.875rem;
         flex-shrink: 0;
         overflow: hidden;
+        padding: 8rem;
 
         /* style */
         background: var(--services-background);
     }
 
-    footer {
-        /* layout */
-        width: 100vw;
-        height: 25.25rem;
+    #services .title {
+        display: flex;
+        flex-direction: column;
+    }
+    #services .title .sub-title {
+        color: #3BE05F;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 0;
+        letter-spacing: 0.04688rem;
+        text-transform: capitalize;
+    }
+    #services .title .main-title {
+        font-size: 3.125rem;
+        font-weight: 400;
+        line-height: 0;
+        letter-spacing: 0.15625rem;
+        text-transform: uppercase;
+    }
+    #services .title .horizontal-bar {
+        width: 8.3125rem;
+        height: 0.375rem;
         flex-shrink: 0;
 
+        background: #3BE05F;
+    }
+
+    #services .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3.13rem;
+    }
+
+    #services .skills .skill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.82rem;
+        padding-left: 1.81rem;
+        width: 18.125rem;
+        height: 18.4375rem;
+        flex-shrink: 0;
+
+        border-radius: 0.9375rem;
+        background: #454850;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    #services .skills .skill:hover {
+        border: 2px solid #3BE05F;
+    }
+
+    #services .skills .skill .skill-icon {
+        position: relative;
+        right: 10px;
+        width: 5.625rem;
+        height: 5.625rem;
+        flex-shrink: 0;
+    }
+
+    .github-icon {
+        background: url(../assets/images/GitHub_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .code-icon {
+        background: url(../assets/images/Code_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .home-office-icon {
+        background: url(../assets/images/Home\ Office_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mobile-social-networking-icon {
+        background: url(../assets/images/Mobile\ Social\ Networking_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .responsive-icon {
+        background: url(../assets/images/Responsive_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .windows-personalization-icon {
+        background: url(../assets/images/Windows\ 10\ Personalization_icon_90x90.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #services .skills .skill .skill-title {
+        font-size: 1rem;
+        font-weight: 900;
+        letter-spacing: 0.05rem;
+        text-transform: capitalize;
+    }
+
+    #services .skills .skill .skill-desc {
+        width: 13.25rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.05rem;
+    }
+
+    #services .more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+        align-self: center;
+    }
+    #services .more .label {
+        color: #51EB73;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 0.9375rem;
+        font-weight: 400;
+        letter-spacing: 0.04688rem;
+
+        cursor: pointer;
+    }
+    #services .more .label:hover {
+        color: #33c051;
+    }
+    #services .more .label:active {
+        color: #3BE05F;
+    }
+    #services .more .horizontal-bar {
+        width: 3.3125rem;
+        height: 0.1875rem;
+        flex-shrink: 0;
+
+        background: #FFF;
+    }
+
+
+    footer .content {
+        /* layout */
+        display: flex;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 30rem;
+        flex-shrink: 0;
         overflow: hidden;
+        padding: 2.31rem 7.63rem;
 
         /* style */
         background: var(--footer-background);
+    }
+
+    footer .developers-list {
+        width: fit-content;
+    }
+
+    footer form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.88rem;
+        width: 24.75rem;
+        flex-shrink: 0;
+    }
+
+    footer form label {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: 0.175rem;
+    }
+
+    footer form input {
+        width: 24.75rem;
+        height: 3.1875rem;
+        flex-shrink: 0;
+        padding: 1.25rem;
+
+        border-radius: 0.375rem;
+        background: #1E1E22;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+        border: none;
+        outline: none;
+    }
+
+    footer form #contact_msg {
+        width: 24.75rem;
+        height: 8.25rem;
+        flex-shrink: 0;
+        padding: 1.25rem;
+        resize: none;
+
+        border-radius: 0.375rem;
+        background: #1E1E22;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+        border: none;
+        outline: none;
+    }
+
+    footer form #contact_send {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        padding: 1rem;
+        flex-shrink: 0;
+        width: 10.375rem;
+
+        border-radius: 0.375rem;
+        background: #3BE05F;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        cursor: pointer;
+    }
+    footer form #contact_send:hover {
+        background: #33c051;
+    }
+    footer form #contact_send:active {
+        background: #51EB73;
+    }
+
+    footer .developers {
+        display: flex;
+        gap: 5.94rem;
+    }
+
+    footer .developers .dev {
+        display: flex;
+        gap: 1.24rem;
+    }
+
+    footer .developers .dev .photo {
+        width: 3.6875rem;
+        height: 3.6875rem;
+        flex-shrink: 0;
+
+        border-radius: 3.6875rem;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+    footer .developers .dev:nth-child(1) .photo {
+        background: url(../assets/images/developers/llaume.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+    footer .developers .dev:nth-child(2) .photo {
+        background: url(../assets/images/developers/jadebravo6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+    footer .developers .dev:nth-child(3) .photo {
+        background: url(../assets/images/developers/caesar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0%;
+    }
+
+
+    footer .developers .dev .dev-info {
+        width: 13.0625rem;
+        height: 15.875rem;
+        flex-shrink: 0;
+
+        border-radius: 0.4375rem;
+        background: #2F3035;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    footer .developers .dev .dev-info .text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.7rem;
+        height: fit-content;
+
+        border-radius: 0.4375rem 0.4375rem 0rem 0rem;
+        background: #3D3E43;
+    }
+    footer .developers .dev .dev-info .text .names {
+        position: relative;
+        bottom: 15px;
+
+        font-size: 0.9375rem;
+        font-weight: 400;
+        letter-spacing: 0.13125rem;
+    }
+    footer .developers .dev .dev-info .text .role {
+        position: relative;
+        bottom: 15px;
+
+        color: #3BE05F;
+        font-size: 0.75rem;
+        font-weight: 400;
+        letter-spacing: 0.105rem;
+    }
+
+    footer .developers .dev .dev-info .text::before {
+        content: '';
+        position: relative;
+        left: -16px;
+        top: 10px;
+
+        width: 0.9375rem;
+        height: 0.9375rem;
+        transform: rotate(-45deg);
+        flex-shrink: 0;
+
+        background: #3D3E43;
+    }
+
+    footer .developers .dev .dev-info .dev-skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.09rem;
+        padding: 0.7rem;
+    }
+
+    footer .developers .dev .dev-info .dev-skills .skill {
+        width: 2.04244rem;
+        height: 2.04244rem;
+        flex-shrink: 0;
     }
 
 }
