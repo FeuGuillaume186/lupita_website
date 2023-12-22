@@ -47,12 +47,6 @@ const OUR_PORTFOLIO = [
         img_link: 'assets/images/portfolio/portfolio_img_05.jpg',
         title: 'Jason Martin',
         desc: 'A Graphic Designer'
-    },
-    {
-        id: 'portfolio_12',
-        img_link: 'assets/images/portfolio/portfolio_img_12.png',
-        title: 'Lupita Web Site',
-        desc: 'This website was designed and coded by lupita\'s developers'
     }
 ];
 
