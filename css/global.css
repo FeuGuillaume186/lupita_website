@@ -41,6 +41,10 @@ html {
     -webkit-user-select: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #cursor {
     display: inline-block;
     vertical-align: middle;
@@ -55,7 +59,7 @@ html {
       width: 0;
     }
     to {
-      width: 50%;
+      width: 20.1%;
     }
   }
   
@@ -64,3 +68,21 @@ html {
       background-color: transparent;
     }
   }
+
+@keyframes imagePositionSlide {
+  0% {
+    /* background-position: 100%; */
+  }
+  50% {
+    background-position: 0%;
+  }
+}
+
+@keyframes faded {
+  0%  {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

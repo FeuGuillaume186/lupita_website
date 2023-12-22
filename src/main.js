@@ -27,8 +27,8 @@ const OUR_PORTFOLIO = [
     {
         id: 'portfolio_02',
         img_link: '../assets/images/portfolio/portfolio_img_02.jpg',
-        title: 'Illustration design',
-        desc: 'The best of lupita design'
+        title: 'E Book Mobile App',
+        desc: 'A responsive web app for ebook'
     },
     {
         id: 'portfolio_03',
@@ -49,59 +49,11 @@ const OUR_PORTFOLIO = [
         desc: 'A Graphic Designer'
     },
     {
-        id: 'portfolio_06',
-        img_link: '../assets/images/portfolio/portfolio_img_06.jpg',
-        title: 'Finn l\'humain et Jack le chien',
-        desc: 'Adventure Time'
-    },
-    {
-        id: 'portfolio_07',
-        img_link: '../assets/images/portfolio/portfolio_img_07.jpg',
-        title: 'Solitude',
-        desc: 'La melancholi comme jamais vue avant'
-    },
-    {
-        id: 'portfolio_08',
-        img_link: '../assets/images/portfolio/portfolio_img_08.jpg',
-        title: 'Nous deux',
-        desc: 'La poesie dans le sang'
-    },
-    {
-        id: 'portfolio_09',
-        img_link: '../assets/images/portfolio/portfolio_img_09.jpg',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
-    {
-        id: 'portfolio_10',
-        img_link: '../assets/images/portfolio/portfolio_img_10.png',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
-    {
-        id: 'portfolio_11',
-        img_link: '../assets/images/portfolio/portfolio_img_11.png',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
-    {
         id: 'portfolio_12',
         img_link: '../assets/images/portfolio/portfolio_img_12.png',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
-    {
-        id: 'portfolio_13',
-        img_link: '../assets/images/portfolio/portfolio_img_13.png',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
-    {
-        id: 'portfolio_14',
-        img_link: '../assets/images/portfolio/portfolio_img_14.png',
-        title: 'Portfolio',
-        desc: 'A web site for design'
-    },
+        title: 'Lupita Web Site',
+        desc: 'This website was designed and coded by lupita\'s developers'
+    }
 ];
 
 const posters = document.querySelectorAll('#home .portfolio-slider .poster');
@@ -178,16 +130,16 @@ slide_anim();
 
 
 // On typing animation
-const textElement = document.querySelector('#about .text .about-text');
-const cursorElement = document.getElementById('cursor');
+// const textElement = document.querySelector('#home .developers-list h1');
+// const cursorElement = document.getElementById('cursor');
 
-// Initial hide of the cursor
-cursorElement.style.display = 'none';
+// // Initial hide of the cursor
+// cursorElement.style.display = 'none';
 
-// Show the cursor after text is fully typed
-textElement.addEventListener('animationiteration', function () {
-    cursorElement.style.display = 'none';
-    setTimeout(function () {
-        cursorElement.style.display = 'inline-block';
-    }, 500);
-});
+// // Show the cursor after text is fully typed
+// textElement.addEventListener('animationiteration', function () {
+//     cursorElement.style.display = 'none';
+//     setTimeout(function () {
+//         cursorElement.style.display = 'inline-block';
+//     }, 500);
+// });

@@ -33,15 +33,15 @@
 <body>
     <header class="prevent-select">
         <div class="content">
-            <div class="header-title">
+            <a href="" class="header-title">
                 LUPITA<span>TECHNOLOGY</span>
-            </div>
+            </a>
             <nav>
                 <ul class="menu">
-                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#">Accueil</a></li>
                     <li><a href="#about">A propos</a></li>
-                    <li><a href="#">Réalisation</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
@@ -58,7 +58,8 @@
                     a team composed of <span class="bold">designer</span>, <span class="bold">front end developer</span> and some <span class="bold">back end developer</span>.
                 </div>
         
-                <button>See our works</button>
+                <button>Portfolio</button>
+                <button>Nos Services</button>
             </div>
     
             <div class="portfolio-slider">
@@ -101,6 +102,13 @@
         
         <div class="developers-list">
             <div class="horizontal-bar"></div>
+            <h1>
+                La Team Lupita
+                <span id="cursor"></span>
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, vel. 
+                Quaerat praesentium nesciunt consequuntur provident eligendi et dolores. 
+                Illo maxime dicta magnam illum iste accusantium magni voluptates reiciendis pariatur necessitatibus.</p>
 
             <div class="developers">
                 <div class="dev">
@@ -176,15 +184,17 @@
                 Suspendisse sit amet nunc diam. Aliquam ultrices vulputate quam nec egestas. Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit.
             </p>
-            <a class="email" href="mailto:lupitatechnology@gmail.com">lupitatechnology@gmail.com</a>
+            <a class="email" href="#contacts" title="Appuyez pour nous laisser un message">lupitatechnology@gmail.com</a>
         </div>
-        <img src="assets/images/favicon_x2.png" alt="Logo de Lupita Technology" class="lupita-logo">
+        <div class="logo">
+            <img src="assets/images/favicon_x2.png" alt="Logo de Lupita Technology" class="lupita-logo">
+        </div>
     </section>
 
     <section class="prevent-select" id="services">
         <div class="title">
-            <h5 class="sub-title">Services</h5>
-            <h1 class="main-title">COMPETANCES</h1>
+            <h5 class="sub-title">Quelles sont nos competances ?</h5>
+            <h1 class="main-title">NOS SERVICES</h1>
             <span class="horizontal-bar"></span>
         </div>
 
@@ -241,6 +251,14 @@
 
         <div class="more">
             <span class="label">Voir nos autres competances</span>
+            <!-- <span class="horizontal-bar"></span> -->
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="title">
+            <h5 class="sub-title">Nos réalisations</h5>
+            <h1 class="main-title">Portfolio</h1>
             <span class="horizontal-bar"></span>
         </div>
     </section>
@@ -249,10 +267,16 @@
         <div class="content">
             <form action="" method="post" class="contact-us">
                 <label>Rester en contact</label>
-                <input type="text" name="name" id="contact_name" placeholder="Nom">
-                <input type="email" name="mail" id="contact_mail" placeholder="Email">
-                <textarea name="contact_msg" id="contact_msg" placeholder="Laissez nous un message"></textarea>
-                <input type="submit" id="contact_send" value="Envoyer">
+
+                <div class="all-input">
+                    <div class="simple-input">
+                        <input type="text" name="name" id="contact_name" placeholder="Nom" title="Entrez votre nom ici">
+                        <input type="email" name="mail" id="contact_mail" placeholder="Email" title="Entrez votre adresse mail ici">
+                    </div>
+                    <textarea name="contact_msg" id="contact_msg" placeholder="Laissez nous un message" title="Ecrivez votre message ici"></textarea>
+                </div>
+
+                <input type="submit" id="contact_send" value="Envoyer" title="Appuyez pour envoyer le message">
             </form>
 
             <div class="developers-list">    
@@ -291,11 +315,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="dev">
+                        <div class="photo"></div>
+    
+                        <div class="dev-info">
+                            <div class="text">
+                                <div class="names">Cesar Paysayo Paysayo</div>
+                                <div class="role">Expert SEO</div>
+                            </div>
+    
+                            <div class="dev-skills">
+                                <span class="skill javascript"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <p class="copyright prevent-select">Copyright &copy; 2023 <span class="lupita-title">LUPITA<span>TECHNOLOGY</span></span>. Tout droit reservé.</p>
         </div>
     </footer>
 
     <script src="src/main.js"></script>
+    <script>
+    // document.getElementById('menu_home_link').onmouseover = () => $('#menu_home').dropdown('show');
+    // document.getElementById('menu_home_link').onmouseleave = () => $('#menu_home').dropdown('hide');
+    
+    </script>
 </body>
 </html>

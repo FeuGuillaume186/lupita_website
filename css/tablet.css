@@ -4,6 +4,7 @@
     #home {
         padding: 6rem;
         padding-bottom: 0;
+        padding-top: 9.5rem;
     }
 
     #home .welcome-n-portfolio {
@@ -15,4 +16,37 @@
         gap: 5rem;
     }
 
+    @media screen and (max-width: 1200px) {
+        #about .logo,
+        #home .portfolio-slider {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        #about .text .about-text {
+            width: 45rem;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        #about .logo,
+        #home .portfolio-slider {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #about .text .about-text {
+            width: 100%;
+            text-align: justify;
+        }
+    }
+
+    footer .content {
+        justify-content: center;
+        gap: 7.3rem;
+    }
 }

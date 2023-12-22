@@ -3,6 +3,10 @@
 /* @media screen and (min-width: 1024px) { */
     header .content {
         /* layout */
+        position: fixed;
+        top: 0;
+        z-index: 500;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -10,7 +14,7 @@
         width: 100vw;
         height: 4.75rem;
         flex-shrink: 0;
-        overflow: hidden;
+        /* overflow: hidden; */
 
         padding: 0 5.75rem 0 5.75rem;
 
@@ -19,7 +23,8 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
-    .header-title {
+    .header-title,
+    .header-title:hover {
         width: fit-content;
 
         /* style */
@@ -29,7 +34,11 @@
         font-size: 1.375rem;        
         font-weight: 700;
     }
-    .header-title span {
+    .lupita-title {
+        font-weight: 700;
+    }
+    .header-title span, 
+    .lupita-title span {
         color: #8D8D8D;
         font-weight: 400;
     }
@@ -51,11 +60,13 @@
         font-size: 1.0625rem;
         font-weight: 400;
         letter-spacing: 0.05313rem;
+
+        transition: color 0.5s;
     }
     nav .menu li a:hover,
     nav .menu li.active a {
         color: #73FF92;
-        font-weight: 600;
+        /* font-weight: 600; */
         /* text-decoration-line: underline; */
         cursor: pointer;
         border-bottom: 1px solid #73FF92;
@@ -76,6 +87,7 @@
         flex-shrink: 0;
         overflow: hidden;
         padding: 8rem;
+        padding-top: 14rem;
         padding-bottom: 0;
 
         /* style */
@@ -96,6 +108,8 @@
         font-size: 1.25rem;
         font-weight: 100;
         letter-spacing: 0.0625rem;
+
+        animation: faded 6.8s infinite;
     }
     #home .welcome-message .hello {
         font-size: 3.75rem;
@@ -117,6 +131,7 @@
 
     #home button {
         padding: 1.3rem;
+        margin-right: 1rem;
 
         /* style */
         border: none;
@@ -129,10 +144,13 @@
         font-weight: 400;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
+
+        transition: background 0.3s, transform 0.3s;
     }
     #home button:hover {
         background: #33c051;
         cursor: pointer;
+        transform: skew(10deg);
     }
     #home button:active {
         background: #3ad65c;
@@ -155,6 +173,7 @@
         background-size: cover;
 
         transition: all 2.5s;
+        animation: imagePositionSlide 5s infinite;
     }
 
     #home .portfolio-slider .top-poster {
@@ -224,6 +243,26 @@
         gap: 2rem;
     }
 
+    #home .developers-list h1 {
+        position: relative;
+        top: -25px;
+        margin: 0;
+
+        overflow: hidden;
+        text-wrap: nowrap;
+        /* border-right: 2px solid white; */
+        animation: typing 3.8s infinite;
+    }
+
+    #home .developers-list h1 + p {
+        position: relative;
+        top: -25px;
+        margin: 0;
+        width: 25rem;
+
+        font-size: 0.8rem;
+    }
+
     #home .developers-list .horizontal-bar {
         width: 8.1875rem;
         height: 0.1875rem;
@@ -235,13 +274,32 @@
     #home .developers-list .developers {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         row-gap: 3.5rem;
         column-gap: 7rem;
     }
 
     #home .developers-list .developers .dev {
         display: flex;
-        gap: 1.75rem;
+        gap: .75rem;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        width: 21rem;
+        transition: all 0.3s;
+    }
+    
+    #home .developers-list .developers .dev:hover {
+        height: fit-content;
+        width: fit-content;
+        width: 25rem;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 7px 0px hsla(133, 73%, 55%, 0.25);
+        transform: scale(1.05);
+    }
+    #home .developers-list .developers .dev:active {
+        box-shadow: none;
     }
 
     #home .developers-list .developers .dev .photo {
@@ -348,24 +406,25 @@
         /* style */
         background: var(--about-background);
     }
-
+    
     #about .lupita-logo {
         width: 28.47544rem;
         height: 35.21225rem;
         flex-shrink: 0;
         object-fit: cover;
     }
-
+    
     #about .text .about-title {
         font-size: 3.125rem;
         font-weight: 400;
         letter-spacing: 0.15625rem;
         text-transform: uppercase;
         width: fit-content;
-
+        
         margin-bottom: 1.94rem;
+        /* animation: faded 6.8s infinite; */
     }
-
+    
     #about .text .about-text {
         width: 32.4375rem;
 
@@ -374,6 +433,7 @@
         font-weight: 400;
 
         margin-bottom: 3.94rem;
+        /* animation: faded 6.8s infinite; */
     }
 
     #about .text .email {
@@ -395,7 +455,8 @@
     /* SERVICES
     -----------
      */
-    #services {
+    #services,
+    #portfolio {
         /* layout */
         display: flex;
         flex-direction: column;
@@ -412,11 +473,50 @@
         background: var(--services-background);
     }
 
-    #services .title {
+    #services::before {
+        content: '';
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        transform: translate(calc(50vw - 12rem), -140px);
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        background: var(--services-background);
+    }
+
+    #portfolio::before,
+    #about::before,
+    footer::before {
+        content: '';
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        transform: translate(calc(50vw - 12rem), -210px);
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        background: var(--services-background);
+
+        z-index: 3;
+    }
+
+    #about::before {
+        transform: translate(calc(50vw - 12rem), -360px);
+        background: var(--home-background);
+    }
+    footer::before {
+        transform: translate(calc(50vw - 3.3rem), -95px);
+        background: var(--about-background);
+    }
+
+    #services .title,
+    #portfolio .title {
         display: flex;
         flex-direction: column;
     }
-    #services .title .sub-title {
+    #services .title .sub-title,
+    #portfolio .title .sub-title {
         color: #3BE05F;
         font-size: 0.9375rem;
         font-weight: 400;
@@ -424,14 +524,16 @@
         letter-spacing: 0.04688rem;
         text-transform: capitalize;
     }
-    #services .title .main-title {
+    #services .title .main-title,
+    #portfolio .title .main-title {
         font-size: 3.125rem;
         font-weight: 400;
         line-height: 0;
         letter-spacing: 0.15625rem;
         text-transform: uppercase;
     }
-    #services .title .horizontal-bar {
+    #services .title .horizontal-bar,
+    #portfolio .title .horizontal-bar {
         width: 8.3125rem;
         height: 0.375rem;
         flex-shrink: 0;
@@ -459,10 +561,16 @@
         border-radius: 0.9375rem;
         background: #454850;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+        transition: transform 0.3s;
     }
 
     #services .skills .skill:hover {
         border: 2px solid #3BE05F;
+        transform: scale(1.1);
+    }
+    #services .skills .skill:active {
+        transform: scale(0.9);
     }
 
     #services .skills .skill .skill-icon {
@@ -524,6 +632,7 @@
         align-items: center;
         gap: 0.4rem;
         align-self: center;
+        z-index: 5;
     }
     #services .more .label {
         color: #51EB73;
@@ -549,6 +658,24 @@
     }
 
 
+
+    /* PORTFOLIO
+    --------------
+    
+    */
+    #portfolio {
+        height: 65.875rem;
+
+        background: var(--about-background);
+    }
+
+
+
+
+    /* FOOTER
+    ---------
+    
+    */
     footer .content {
         /* layout */
         display: flex;
@@ -556,10 +683,11 @@
         flex-wrap: wrap;
 
         width: 100vw;
-        height: 30rem;
+        /* height: 30rem; */
         flex-shrink: 0;
         overflow: hidden;
-        padding: 2.31rem 7.63rem;
+        padding: 7.63rem;
+        padding-bottom: 1.5rem;
 
         /* style */
         background: var(--footer-background);
@@ -572,8 +700,10 @@
     footer form {
         display: flex;
         flex-direction: column;
-        gap: 0.88rem;
-        width: 24.75rem;
+        align-items: center;
+        justify-content: center;
+        gap: 1.88rem;
+        width: fit-content;
         flex-shrink: 0;
     }
 
@@ -583,10 +713,20 @@
         font-weight: 400;
         letter-spacing: 0.175rem;
     }
+    footer form .all-input {
+        display: flex;
+        gap: 0.88rem;
+    }
+    footer form .simple-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* gap: 0.88rem; */
+    }
 
     footer form input {
         width: 24.75rem;
-        height: 3.1875rem;
+        height: 3.6rem;
         flex-shrink: 0;
         padding: 1.25rem;
 
@@ -596,6 +736,16 @@
 
         border: none;
         outline: none;
+    }
+
+    footer form input:hover,
+    footer form #contact_msg:hover {
+        border: 1px solid #175a26;
+    }
+
+    footer form input:focus,
+    footer form #contact_msg:focus {
+        border: 1px solid #33c051;
     }
 
     footer form #contact_msg {
@@ -617,7 +767,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        align-self: flex-end;
+        /* align-self: flex-end; */
         padding: 1rem;
         flex-shrink: 0;
         width: 10.375rem;
@@ -627,22 +777,28 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
         cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
     }
     footer form #contact_send:hover {
         background: #33c051;
+        transform: scale(1.1);
     }
     footer form #contact_send:active {
         background: #51EB73;
+        transform: scale(0.9);
     }
 
     footer .developers {
         display: flex;
         gap: 5.94rem;
+        flex-wrap: wrap;
     }
 
     footer .developers .dev {
         display: flex;
         gap: 1.24rem;
+
+        transition: transform 0.3s;
     }
 
     footer .developers .dev .photo {
@@ -676,12 +832,26 @@
 
     footer .developers .dev .dev-info {
         width: 13.0625rem;
-        height: 15.875rem;
+        /* height: 15.875rem; */
         flex-shrink: 0;
 
         border-radius: 0.4375rem;
         background: #2F3035;
+
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    footer .developers .dev .dev-info:hover {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    footer .developers .dev:hover {
+        transform: scale(1.2) rotate(8deg);
+    }
+    footer .developers .dev:nth-child(2):hover {
+        transform: scale(1.2) rotate(-8deg);
+    }
+    footer .developers .dev:active,
+    footer .developers .dev:nth-child(2):active {
+        transform: scale(.8);
     }
 
     footer .developers .dev .dev-info .text {
@@ -689,6 +859,7 @@
         flex-direction: column;
         gap: 0.5rem;
         padding: 0.7rem;
+        padding-bottom: 0;
         height: fit-content;
 
         border-radius: 0.4375rem 0.4375rem 0rem 0rem;
@@ -737,6 +908,10 @@
         width: 2.04244rem;
         height: 2.04244rem;
         flex-shrink: 0;
+    }
+
+    footer .copyright {
+        font-size: .85rem;
     }
 
 /* } */
