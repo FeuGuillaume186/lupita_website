@@ -109,7 +109,7 @@
         font-weight: 100;
         letter-spacing: 0.0625rem;
 
-        animation: faded 6.8s infinite;
+        /* animation: faded 6.8s infinite; */
     }
     #home .welcome-message .hello {
         font-size: 3.75rem;
@@ -156,9 +156,12 @@
         background: #3ad65c;
     }
 
-    #home .portfolio-slider {
+    #home .portfolio-slider {        
         display: flex;
         flex-direction: column;
+
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     #home .portfolio-slider .poster {

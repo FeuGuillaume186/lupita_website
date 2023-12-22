@@ -80,6 +80,7 @@ function set_image(img_id) {
         background: url(${OUR_PORTFOLIO[img_id].img_link});
         background-repeat: no-repeat;
         background-size: cover;
+        will-change: transform;
         `;
         document.querySelector('#home .portfolio-slider .top-poster .elements .image-meta .label').innerHTML = `<span>${OUR_PORTFOLIO[img_id].title}</span> <br>${OUR_PORTFOLIO[img_id].desc}`;
     }
@@ -121,6 +122,45 @@ left_arrow.onclick = () => {
 
 // lancement du slider
 slide_anim();
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        //   observer.unobserve(entry.target);
+        } else {
+            entry.target.classList.remove('animated');
+          }
+      });
+    }, { threshold: 0.5 });
+  
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+});
+
+
+
+
+
+
+// PARALLAX EEFECT
+// const layers = posters;
+
+// window.addEventListener('scroll', function () {
+//     const scrollY = window.scrollY;
+
+//     layers.forEach(function (layer, index) {
+//         const speed = 0.5 * (index + 1);
+//         const yPos = -(scrollY * speed);
+//         layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
+//     });
+// });
 
 
 // On typing animation
