@@ -20,39 +20,33 @@ print(" Cet utilisateur n'existe pas ", 'white', 'purple')
 const OUR_PORTFOLIO = [
     {
         id: 'portfolio_01',
-        img_link: 'assets/images/portfolio/portfolio_img_01.jpg',
+        img_link: '../assets/images/portfolio/portfolio_img_01.jpg',
         title: 'amogoe',
         desc: 'A responsive web site for amogoe'
     },
     {
         id: 'portfolio_02',
-        img_link: 'assets/images/portfolio/portfolio_img_02.jpg',
+        img_link: '../assets/images/portfolio/portfolio_img_02.jpg',
         title: 'E Book Mobile App',
         desc: 'A responsive web app for ebook'
     },
     {
         id: 'portfolio_03',
-        img_link: 'assets/images/portfolio/portfolio_img_03.jpg',
+        img_link: '../assets/images/portfolio/portfolio_img_03.jpg',
         title: 'Jaison',
         desc: 'A Graphic Designer'
     },
     {
         id: 'portfolio_04',
-        img_link: 'assets/images/portfolio/portfolio_img_04.jpg',
+        img_link: '../assets/images/portfolio/portfolio_img_04.jpg',
         title: 'Daniel Stephan',
         desc: 'A web frontend developer'
     },
     {
         id: 'portfolio_05',
-        img_link: 'assets/images/portfolio/portfolio_img_05.jpg',
+        img_link: '../assets/images/portfolio/portfolio_img_05.jpg',
         title: 'Jason Martin',
         desc: 'A Graphic Designer'
-    },
-    {
-        id: 'portfolio_12',
-        img_link: 'assets/images/portfolio/portfolio_img_12.png',
-        title: 'Lupita Web Site',
-        desc: 'This website was designed and coded by lupita\'s developers'
     }
 ];
 
