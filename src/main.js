@@ -50,7 +50,7 @@ const OUR_PORTFOLIO = [
     },
     {
         id: 'portfolio_12',
-        img_link: '../assets/images/portfolio/portfolio_img_12.png',
+        img_link: 'assets/images/portfolio/portfolio_img_12.png',
         title: 'Lupita Web Site',
         desc: 'This website was designed and coded by lupita\'s developers'
     }
