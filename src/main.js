@@ -32,67 +32,67 @@ const OUR_PORTFOLIO = [
 //     },
     {
         id: 'portfolio_03',
-        img_link: '../assets/images/portfolio/portfolio_img_03.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_03.jpg',
         title: 'Jaison',
         desc: 'A Graphic Designer'
     },
     {
         id: 'portfolio_04',
-        img_link: '../assets/images/portfolio/portfolio_img_04.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_04.jpg',
         title: 'Daniel Stephan',
         desc: 'A web frontend developer'
     },
     {
         id: 'portfolio_05',
-        img_link: '../assets/images/portfolio/portfolio_img_05.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_05.jpg',
         title: 'Jason Martin',
         desc: 'A Graphic Designer'
     },
     {
         id: 'portfolio_06',
-        img_link: '../assets/images/portfolio/portfolio_img_06.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_06.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_07',
-        img_link: '../assets/images/portfolio/portfolio_img_07.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_07.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_08',
-        img_link: '../assets/images/portfolio/portfolio_img_08.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_08.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_09',
-        img_link: '../assets/images/portfolio/portfolio_img_09.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_09.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_10',
-        img_link: '../assets/images/portfolio/portfolio_img_10.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_10.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_11',
-        img_link: '../assets/images/portfolio/portfolio_img_11.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_11.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     },
     {
         id: 'portfolio_12',
-        img_link: '../assets/images/portfolio/portfolio_img_12.jpg',
+        img_link: 'assets/images/portfolio/portfolio_img_12.jpg',
         title: 'Web Design',
         desc: 'Not powered by Lupita Tech'
     }
     // {
     //     id: 'portfolio_13',
-    //     img_link: '../assets/images/portfolio/portfolio_img_13.jpg',
+    //     img_link: 'assets/images/portfolio/portfolio_img_13.jpg',
     //     title: 'Web Design',
     //     desc: 'Not powered by Lupita Tech'
     // },
