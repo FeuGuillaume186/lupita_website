@@ -1,0 +1,186 @@
+
+@media screen and (max-width: 743px) {
+    header .content {
+        padding: 0 .75rem 0 1.75rem;
+    }
+
+    header .content .dropdown.navbar .menu {
+        width: 12.125rem;
+        /* height: 10.4375rem; */
+        flex-shrink: 0;
+        /* padding: 1rem; */
+
+        border-radius: 0.6875rem;
+        background: var(--nav-background);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    header .content .dropdown.navbar .menu::after {
+        content: '';
+        width: 0.6875rem !important;
+        height: 0.6875rem !important;
+        /* transform: rotate(-45deg); */
+        flex-shrink: 0;
+
+        background: var(--nav-background);
+    }
+
+    header .content .dropdown.navbar .menu .item {
+        text-align: right;
+    }
+
+    #home {
+        padding: 0rem;
+    }
+    #home .welcome-n-portfolio {
+        display: grid;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.25rem;
+        transform: scale(0.8);
+    }
+
+    #home .portfolio-slider {
+        width: 100vw;
+        padding: 0;
+        transform: scale(0.99);
+    }
+
+    #home .portfolio-slider .poster {
+        width: 100%;
+    }
+
+    #home .developers-list {
+        position: relative;
+        bottom: 120px;
+        transform: scale(0.8);
+        padding: 0;
+        display: grid;
+    }
+
+    #home .developers-list .developers {
+        display: grid;
+    }
+
+    #home .developers-list .developers .dev {
+        gap: 0;
+    }
+
+    #home .developers-list .developers .dev .photo {
+        margin-right: .75rem;
+    }
+
+    #home .developers-list .developers .dev .dev-info,
+    #home .developers-list .developers .dev .dev-info .text {
+        display: grid;
+    }
+
+    #home .developers-list .developers .dev:hover {
+        width: 23rem;
+    }
+
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 65%;
+        }
+    }
+
+    #about .logo,
+    #home .portfolio-slider {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about {
+        padding: 0;
+    }
+
+    #about .text,
+    #about .logo {
+        transform: scale(0.8);
+    }
+
+    #about .text .about-text {
+        width: auto;
+    }
+
+    #about::before {
+        transform: translate(calc(50vw - 4.2rem), -530px);
+        background: var(--home-background);
+    }
+
+    #services,
+    #portfolio,
+    footer .content {
+        padding: 4rem 0;
+    }
+    #services::before {
+        transform: translate(calc(50vw - 4.2rem), -85px);
+    }
+    #services .skills,
+    #services {
+        display: grid;
+    }
+
+    #services .title,
+    #portfolio .title {
+        transform: scale(0.8);
+    }
+
+    #services .skills .skill {
+        gap: 0;
+    }
+    #services .skills .skill .skill-title {
+        margin-top: 0.82rem;
+        margin-bottom: 0.82rem;
+    }
+
+
+    #portfolio::before {
+        transform: translate(calc(50vw - 4.2rem), -145px);
+    }
+
+
+    footer::before {
+        transform: translate(calc(50vw - 4.2rem), -95px);
+    }
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    footer form {
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        margin-bottom: 2.2rem;
+    }
+    footer form .simple-input {
+        display: grid;
+    }
+    footer form .all-input {
+        display: grid;
+        flex-direction: column;
+    }
+
+    footer .developers {
+        display: grid;
+        margin-bottom: 2rem;
+    }
+
+    footer .developers .dev {
+        gap: 0;
+    }
+
+    footer .developers .dev .photo {
+        margin-right: 1.24rem;
+    }
+}

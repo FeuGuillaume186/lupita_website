@@ -1,6 +1,30 @@
 /* tablet verion */
 
 @media screen and (min-width: 744px) {
+    header .content .dropdown.navbar .menu {
+        width: 12.125rem;
+        /* height: 10.4375rem; */
+        flex-shrink: 0;
+        /* padding: 1rem; */
+
+        border-radius: 0.6875rem;
+        background: var(--nav-background);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    header .content .dropdown.navbar .menu::after {
+        content: '';
+        width: 0.6875rem !important;
+        height: 0.6875rem !important;
+        /* transform: rotate(-45deg); */
+        flex-shrink: 0;
+
+        background: var(--nav-background);
+    }
+
+    header .content .dropdown.navbar .menu .item {
+        text-align: right;
+    }
+
     #home {
         padding: 6rem;
         padding-bottom: 0;
@@ -10,6 +34,15 @@
     #home .welcome-n-portfolio {
         gap: 3.25rem;
     }
+
+    @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 65%;
+        }
+      }
 
     #about {
         padding: 6rem;
@@ -27,6 +60,11 @@
 
         #about .text .about-text {
             width: 45rem;
+        }
+
+        #about::before {
+            transform: translate(calc(50vw - 12rem), -600px);
+            background: var(--home-background);
         }
     }
 
