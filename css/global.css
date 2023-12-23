@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+    --foreground: #FFF;
     --header-background: #212226;
     --header-background-shadow: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     --home-background: #25262A;
     --about-background: #2B2C31;
     --about-color: #868A98;
     --services-background: #36383E;
+	--services-skill-background: #454850;
     --footer-background: #212226;
+	--footer-dev-info-background: #2F3035;
+	--footer-dev-text-info-background: #3D3E43;
+	--nav-foreground-item: #D4D4D4;
+	--nav-foreground-item-hover: #73FF92;
+	--nav-background: #2D2E33;
 
-    --portfolio-reflection-image-gradient: linear-gradient(180deg, rgba(37, 38, 42, 0.00) 0%, #25262A 68.75%);
+    --portfolio-reflection-image-gradient: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #25262A 68.75%);
 
     --text-field-background: #1E1E22;
     --text-field-placeholder-color: #454850;
@@ -17,15 +24,46 @@
     --text-field-shadow: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 
     --normal-button-background: #3BE05F;
+    --normal-button-background-hover: #33c051;
+    --normal-button-background-active: #3ad65c;
+
     --normal-button-border-radius: border-radius: 10px;
     --normal-button-shadow: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+body.light {
+	--foreground: #000000;
+    --header-background: #dadada;
+    --header-background-shadow: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --home-background: #fff;
+    --about-background: #f0f0f0;
+    --about-color: #868A98;
+    --services-background: #f5f5f5;
+	--services-skill-background: #fff;
+    --footer-background: #FFF;
+	--footer-dev-info-background: #c4c4c4;
+	--footer-dev-text-info-background: #ebebeb;
+	--nav-foreground-item: #272727;
+	--nav-foreground-item-hover: #31d154;
+	--nav-background: #d6d6d6;
+
+    --portfolio-reflection-image-gradient: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #ffffff 68.75%);
+
+    --text-field-background: #dbdbdb;
+    --text-field-placeholder-color: #bebebe;
+    --text-field-border-radius: border-radius: 6px;
+    --text-field-shadow: box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+    --normal-button-background: #3BE05F;
+    --normal-button-background-hover: #33c051;
+    --normal-button-background-active: #3ad65c;
 }
 
 * {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     line-height: normal;
-    color: white;
+    color: var(--foreground);
     
     margin: 0;
     padding: 0;
@@ -45,7 +83,8 @@ html {
   display: none;
 }
 
-.animate-on-scroll {
+.animate-on-scroll,
+.animate-on-hover {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -57,13 +96,15 @@ html {
 }
 
 #cursor {
+    position: relative;
+    left: 0;
     display: inline-block;
     vertical-align: middle;
     width: 2px;
     height: 1.1em;
-    background-color: #FFF;
+    background-color: var(--foreground);
     animation: blink 0.8s infinite;
-  }
+}
   
   @keyframes typing {
     from {

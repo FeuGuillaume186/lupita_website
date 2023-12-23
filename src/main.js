@@ -47,7 +47,79 @@ const OUR_PORTFOLIO = [
         img_link: '../assets/images/portfolio/portfolio_img_05.jpg',
         title: 'Jason Martin',
         desc: 'A Graphic Designer'
+    },
+    {
+        id: 'portfolio_06',
+        img_link: '../assets/images/portfolio/portfolio_img_06.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_07',
+        img_link: '../assets/images/portfolio/portfolio_img_07.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_08',
+        img_link: '../assets/images/portfolio/portfolio_img_08.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_09',
+        img_link: '../assets/images/portfolio/portfolio_img_09.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_10',
+        img_link: '../assets/images/portfolio/portfolio_img_10.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_11',
+        img_link: '../assets/images/portfolio/portfolio_img_11.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
+    },
+    {
+        id: 'portfolio_12',
+        img_link: '../assets/images/portfolio/portfolio_img_12.jpg',
+        title: 'Web Design',
+        desc: 'Not powered by Lupita Tech'
     }
+    // {
+    //     id: 'portfolio_13',
+    //     img_link: '../assets/images/portfolio/portfolio_img_13.jpg',
+    //     title: 'Web Design',
+    //     desc: 'Not powered by Lupita Tech'
+    // },
+    // {
+    //     id: 'portfolio_14',
+    //     img_link: '../assets/images/portfolio/portfolio_img_14.jpg',
+    //     title: 'Web Design',
+    //     desc: 'Not powered by Lupita Tech'
+    // },
+    // {
+    //     id: 'portfolio_15',
+    //     img_link: '../assets/images/portfolio/portfolio_img_15.jpg',
+    //     title: 'Web Design',
+    //     desc: 'Not powered by Lupita Tech'
+    // },
+    // {
+    //     id: 'portfolio_16',
+    //     img_link: '../assets/images/portfolio/portfolio_img_16.jpg',
+    //     title: 'Web Design',
+    //     desc: 'Not powered by Lupita Tech'
+    // },
+    // {
+    //     id: 'portfolio_17',
+    //     img_link: '../assets/images/portfolio/portfolio_img_17.jpg',
+    //     title: 'Web Design',
+    //     desc: 'Not powered by Lupita Tech'
+    // },
 ];
 
 const posters = document.querySelectorAll('#home .portfolio-slider .poster');
@@ -124,23 +196,24 @@ left_arrow.onclick = () => {
 slide_anim();
 
 
-
+// affiche les elements a l'ecran lorsque qu'ils sont visible a l'ecran
+// avec un effet de fade-in
 document.addEventListener('DOMContentLoaded', function () {
     const elements = document.querySelectorAll('.animate-on-scroll');
     
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
-        //   observer.unobserve(entry.target);
-        } else {
-            entry.target.classList.remove('animated');
-          }
-      });
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                //   observer.unobserve(entry.target);
+            } else {
+                entry.target.classList.remove('animated');
+            }
+        });
     }, { threshold: 0.5 });
   
     elements.forEach(element => {
-      observer.observe(element);
+        observer.observe(element);
     });
 });
 

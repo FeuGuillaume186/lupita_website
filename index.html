@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Semantic UI -->
     <script src="res/semantic-ui/jquery@3.4.1.js"></script>
@@ -30,20 +32,36 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
 </head>
 
-<body>
+<body class="">
     <header class="prevent-select">
         <div class="content">
             <a href="" class="header-title">
                 LUPITA<span>TECHNOLOGY</span>
             </a>
             <nav>
+                <span id="color_theme_switcher" class="color-theme-switcher mobile" onclick="change_theme()">
+                    <i class="moon icon dark"></i>
+                </span>
+
                 <ul class="menu">
+                    <li id="color_theme_switcher" class="color-theme-switcher desktop" onclick="change_theme()"><a>Sombre </a> <i class="moon icon dark"></i></li>
                     <li><a href="#">Accueil</a></li>
                     <li><a href="#about">A propos</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
+                
+                <span class="ui dropdown pointing top navbar">
+                    <i class="sidebar icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#">Accueil</a>
+                        <a class="item" href="#about">A propos</a>
+                        <a class="item" href="#services">Services</a>
+                        <a class="item" href="#portfolio">Portfolio</a>
+                        <a class="item" href="#contacts">Contacts</a>
+                    </div>
+                </span>
             </nav>
         </div>
     </header>
@@ -63,9 +81,9 @@
             </div>
     
             <div class="portfolio-slider">
-                <div class="top-poster poster">
+                <div class="top-poster poster object-to-hover" onmouseenter="animated(event)">
                     <div class="elements">
-                        <div class="arrows">
+                        <div class="arrows animate-on-hover">
                             <div class="left-arrow" title="précedent">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                                     <path d="M0 14.5C0 22.5081 6.49187 29 14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5Z" fill="white" fill-opacity="1"/>
@@ -198,7 +216,7 @@
             <span class="horizontal-bar"></span>
         </div>
 
-        <div class="skills animate-on-scroll" data-animation="fade-in">
+        <div class="skills" data-animation="fade-in">
             <div class="skill">
                 <div class="skill-icon github-icon"></div>
                 <div class="skill-title">Git Version contrôle</div>
@@ -260,6 +278,60 @@
             <h5 class="sub-title">Nos réalisations</h5>
             <h1 class="main-title">Portfolio</h1>
             <span class="horizontal-bar"></span>
+        </div>
+
+        <div class="portfolio-images">
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
+            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
+                <div class="see-more animate-on-hover">Examiner</div>
+            </div>
         </div>
     </section>
 
@@ -338,6 +410,7 @@
     </footer>
 
     <script src="src/main.js"></script>
+    <script src="src/responsive.js"></script>
     <script>
     // document.getElementById('menu_home_link').onmouseover = () => $('#menu_home').dropdown('show');
     // document.getElementById('menu_home_link').onmouseleave = () => $('#menu_home').dropdown('hide');
