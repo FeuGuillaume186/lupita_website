@@ -73,7 +73,9 @@
         /* font-weight: 600; */
         /* text-decoration-line: underline; */
         cursor: pointer !important;
-        border-bottom: 1px solid #73FF92;
+    }
+    nav .menu li.active a {
+        border-bottom: 2px solid #73FF92;
     }
     nav .menu .item.active {
         text-decoration-line: underline;
@@ -679,7 +681,7 @@
     
     */
     #portfolio {
-        /* height: 65.875rem; */
+        /* height: 68rem; */
 
         background: var(--about-background);
     }

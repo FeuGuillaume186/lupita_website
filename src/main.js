@@ -215,7 +215,31 @@ document.addEventListener('DOMContentLoaded', function () {
     elements.forEach(element => {
         observer.observe(element);
     });
+    
+    const elements_ = document.querySelectorAll('.page-section');
+    
+    function select_menu_item(menu) {
+        return document.getElementById(menu + '_menu');
+    }
+    
+    const section_observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                select_menu_item(entry.target.id).classList.add('active');
+            }
+            
+            if(!entry.isIntersecting) {
+                select_menu_item(entry.target.id).classList.remove('active');
+            }
+    
+        });
+    }, { threshold: 0.5 });
+    
+    elements_.forEach(element => {
+        section_observer.observe(element);
+    });
 });
+
 
 
 
