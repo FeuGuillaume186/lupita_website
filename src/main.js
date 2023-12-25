@@ -18,18 +18,18 @@ print(" Cet utilisateur n'existe pas ", 'white', 'purple')
 // ----
 // 
 const OUR_PORTFOLIO = [
-    {
-        id: 'portfolio_01',
-        img_link: '../assets/images/portfolio/portfolio_img_01.jpg',
-        title: 'amogoe',
-        desc: 'A responsive web site for amogoe'
-    },
-    {
-        id: 'portfolio_02',
-        img_link: '../assets/images/portfolio/portfolio_img_02.jpg',
-        title: 'E Book Mobile App',
-        desc: 'A responsive web app for ebook'
-    },
+//     {
+//         id: 'portfolio_01',
+//         img_link: '../assets/images/portfolio/portfolio_img_01.jpg',
+//         title: 'amogoe',
+//         desc: 'A responsive web site for amogoe'
+//     },
+//     {
+//         id: 'portfolio_02',
+//         img_link: '../assets/images/portfolio/portfolio_img_02.jpg',
+//         title: 'E Book Mobile App',
+//         desc: 'A responsive web app for ebook'
+//     },
     {
         id: 'portfolio_03',
         img_link: '../assets/images/portfolio/portfolio_img_03.jpg',
