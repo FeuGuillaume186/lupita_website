@@ -69,7 +69,7 @@
                         <a id="portfolio_menu" class="item" href="#portfolio">Portfolio</a>
                         <a id="contacts_menu" class="item" href="#contacts">Contacts</a>
                         <a id="lang" class="ui pointing left dropdown langue item">
-                            <span>FR</span> <i class="dropdown icon"></i>
+                            <span>Langues</span> <i class="dropdown icon"></i>
                             <div class="menu">
                                 <div id="lang_FR" class="item">Français</div>
                                 <div id="lang_EN" class="item">Anglais</div>
@@ -218,7 +218,7 @@
                 Suspendisse sit amet nunc diam. Aliquam ultrices vulputate quam nec egestas. Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit.
             </p>
-            <a class="email" href="#contacts" title="Appuyez pour nous laisser un message">lupitatechnology@gmail.com</a>
+            <a id="lupita_email" class="email" href="#contacts" title="Appuyez pour nous laisser un message" onmouseenter="title_popup(event)">lupitatechnology@gmail.com</a>
         </div>
         <div class="logo">
             <img src="assets/images/favicon_x2.png" alt="Logo de Lupita Technology" class="lupita-logo">
@@ -308,13 +308,13 @@
 
                 <div class="all-input">
                     <div class="simple-input">
-                        <input type="text" name="name" id="contact_name" placeholder="Nom" title="Entrez votre nom ici">
-                        <input type="email" name="email" id="contact_mail" placeholder="Email" title="Entrez votre adresse mail ici">
+                        <input type="text" name="name" id="contact_name" placeholder="Nom" title="Entrez votre nom ici" onmouseenter="title_popup(event)">
+                        <input type="email" name="email" id="contact_mail" placeholder="Email" title="Entrez votre adresse mail ici" onmouseenter="title_popup(event)">
                     </div>
-                    <textarea name="message" id="contact_msg" placeholder="Laissez nous un message" title="Ecrivez votre message ici"></textarea>
+                    <textarea name="message" id="contact_msg" placeholder="Laissez nous un message" title="Ecrivez votre message ici" onmouseenter="title_popup(event)"></textarea>
                 </div>
 
-                <input type="submit" id="contact_send" value="Envoyer" title="Appuyez pour envoyer le message">
+                <input type="submit" id="contact_send" value="Envoyer" title="Appuyez pour envoyer le message" onmouseenter="title_popup(event)">
             </form>
 
             <div class="developers-list">    
@@ -388,13 +388,15 @@
     <div id="send_message_error" class="ui tiny modal send-message-result">
         <div class="content">
             <span class="icon-symb"><i class="times circle red icon"></i></span>
-            <p class="message">Le message n'a pas pu etre envoyer !</p>
+            <h3>Le message n'a pas pu etre envoyer !</h3>
+            <p class="message">Veuillez patienter un moment avant de ressayez. Si le probleme persiste contacter nous ! <a href="mailto:lupitatechnology@gmail.com">lupitatechnology@gmail.com</a></p>
         </div>
     </div>
     <div id="send_message_success" class="ui tiny modal send-message-result">
         <div class="content">
             <span class="icon-symb"><i class="check circle green icon"></i></span>
-            <p class="message">Le message a été envoyé avec success !</p>
+            <h3>Le message a été envoyé avec success !</h3>
+            <p class="message">Merci d'avoir contacter <span class="lupita-title">LUPITA<span>TECHNOLOGY</span></span>. Notre equipe va analyser votre requete et vous repondre de que possible. Pensez donc a verifier vos mails ! Merci ✨</p>
         </div>
     </div>
 
@@ -448,7 +450,7 @@
             .catch(error => {
                 // console.error('Erreur lors de l\'envoi du formulaire:', error);
 
-                $('#send_message_error')
+                $('#send_message_success')
                     .modal('show');
             });
         });
