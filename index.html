@@ -44,12 +44,20 @@
                 </span>
 
                 <ul class="menu">
-                    <li id="color_theme_switcher" class="color-theme-switcher desktop" onclick="change_theme()"><a>Sombre </a> <i class="moon icon dark"></i></li>
+                    <li id="color_theme_switcher" class="color-theme-switcher desktop" title="Changer le thème" onmouseenter="title_popup(event)" onclick="change_theme()"><a>Sombre </a> <i class="moon icon dark"></i></li>
                     <li id="home_menu"><a href="#">Accueil</a></li>
                     <li id="about_menu"><a href="#about">A propos</a></li>
                     <li id="services_menu"><a href="#services">Services</a></li>
                     <li id="portfolio_menu"><a href="#portfolio">Portfolio</a></li>
                     <li id="contacts_menu"><a href="#contacts">Contacts</a></li>
+                    <li id="lang" class="ui pointing top right dropdown langue">
+                        <span>FR</span> <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div id="lang_FR" class="item">Français</div>
+                            <div id="lang_EN" class="item">Anglais</div>
+                            <div id="lang_LI" class="item">Lingala</div>
+                        </div>
+                    </li>
                 </ul>
                 
                 <span class="ui dropdown pointing top navbar">
@@ -60,6 +68,14 @@
                         <a id="services_menu" class="item" href="#services">Services</a>
                         <a id="portfolio_menu" class="item" href="#portfolio">Portfolio</a>
                         <a id="contacts_menu" class="item" href="#contacts">Contacts</a>
+                        <a id="lang" class="ui pointing left dropdown langue item">
+                            <span>FR</span> <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div id="lang_FR" class="item">Français</div>
+                                <div id="lang_EN" class="item">Anglais</div>
+                                <div id="lang_LI" class="item">Lingala</div>
+                            </div>
+                        </a>
                     </div>
                 </span>
             </nav>
@@ -84,14 +100,14 @@
                 <div class="top-poster poster object-to-hover" onmouseenter="animated(event)">
                     <div class="elements">
                         <div class="arrows animate-on-hover">
-                            <div class="left-arrow" title="précedent">
+                            <div class="left-arrow" title="précedent" onmouseenter="title_popup(event)" id="left_arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                                     <path d="M0 14.5C0 22.5081 6.49187 29 14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5Z" fill="white" fill-opacity="1"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6569 6.92894L6.29289 13.2929C5.90237 13.6834 5.90237 14.3166 6.29289 14.7071L12.6569 21.0711C13.0474 21.4616 13.6805 21.4616 14.0711 21.0711C14.4616 20.6806 14.4616 20.0474 14.0711 19.6569L9.41421 15H22V13H9.41421L14.0711 8.34315C14.4616 7.95263 14.4616 7.31947 14.0711 6.92894C13.6805 6.53842 13.0474 6.53842 12.6569 6.92894Z" fill="black" fill-opacity="1"/>
                                 </svg>
                             </div>
                             
-                            <div class="right-arrow" title="suivant">
+                            <div class="right-arrow" title="suivant" onmouseenter="title_popup(event)" id="right_arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
                                     <path d="M29 14.5C29 22.5081 22.5081 29 14.5 29C6.49187 29 0 22.5081 0 14.5C0 6.49187 6.49187 0 14.5 0C22.5081 0 29 6.49187 29 14.5Z" fill="white" fill-opacity="1"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3431 6.92894L22.7071 13.2929C23.0976 13.6834 23.0976 14.3166 22.7071 14.7071L16.3431 21.0711C15.9526 21.4616 15.3195 21.4616 14.9289 21.0711C14.5384 20.6806 14.5384 20.0474 14.9289 19.6569L19.5858 15H7V13H19.5858L14.9289 8.34315C14.5384 7.95263 14.5384 7.31947 14.9289 6.92894C15.3195 6.53842 15.9526 6.53842 16.3431 6.92894Z" fill="black" fill-opacity="1"/>
@@ -129,7 +145,7 @@
                 Illo maxime dicta magnam illum iste accusantium magni voluptates reiciendis pariatur necessitatibus.</p>
 
             <div class="developers animate-on-scroll" data-animation="slide-left">
-                <div class="dev">
+                <div class="dev" id="mem_1">
                     <div class="photo"></div>
 
                     <div class="dev-info">
@@ -147,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="dev">
+                <div class="dev" id="mem_3">
                     <div class="photo"></div>
 
                     <div class="dev-info">
@@ -164,12 +180,12 @@
                     </div>
                 </div>
 
-                <div class="dev">
+                <div class="dev" id="mem_2">
                     <div class="photo"></div>
 
                     <div class="dev-info">
                         <div class="text">
-                            <div class="names">Cesar Paysayo Paysayo</div>
+                            <div class="names">Julia Alexa</div>
                             <div class="role">Expert SEO</div>
                         </div>
 
@@ -281,105 +297,21 @@
         </div>
 
         <div class="portfolio-images">
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
-            <div class="portfolio-image object-to-hover" onmouseenter="animated(event)">
-                <div class="see-more animate-on-hover">
-                    <span>Examiner</span>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <footer class="page-section" id="contacts">
         <div class="content">
-            <form action="" method="post" class="contact-us">
+            <form action="https://lupilabo.000webhostapp.com/mailsystem/reception.php" method="post" id="contact_us" class="contact-us">
                 <label>Rester en contact</label>
 
                 <div class="all-input">
                     <div class="simple-input">
                         <input type="text" name="name" id="contact_name" placeholder="Nom" title="Entrez votre nom ici">
-                        <input type="email" name="mail" id="contact_mail" placeholder="Email" title="Entrez votre adresse mail ici">
+                        <input type="email" name="email" id="contact_mail" placeholder="Email" title="Entrez votre adresse mail ici">
                     </div>
-                    <textarea name="contact_msg" id="contact_msg" placeholder="Laissez nous un message" title="Ecrivez votre message ici"></textarea>
+                    <textarea name="message" id="contact_msg" placeholder="Laissez nous un message" title="Ecrivez votre message ici"></textarea>
                 </div>
 
                 <input type="submit" id="contact_send" value="Envoyer" title="Appuyez pour envoyer le message">
@@ -387,7 +319,7 @@
 
             <div class="developers-list">    
                 <div class="developers animate-on-scroll" data-animation="fade-in">
-                    <div class="dev">
+                    <div class="dev" id="mem_1">
                         <div class="photo"></div>
     
                         <div class="dev-info">
@@ -405,7 +337,7 @@
                         </div>
                     </div>
     
-                    <div class="dev">
+                    <div class="dev" id="mem_3">
                         <div class="photo"></div>
     
                         <div class="dev-info">
@@ -422,12 +354,12 @@
                         </div>
                     </div>
 
-                    <div class="dev">
+                    <div class="dev" id="mem_2">
                         <div class="photo"></div>
     
                         <div class="dev-info">
                             <div class="text">
-                                <div class="names">Cesar Paysayo Paysayo</div>
+                                <div class="names">Julia Alexa</div>
                                 <div class="role">Expert SEO</div>
                             </div>
     
@@ -443,15 +375,83 @@
         </div>
     </footer>
 
+
+    <div id="modal_member" class="ui modal member skills">
+    </div>
+
+    <div id="modal_portfolio" class="ui modal portfolio skills">
+    </div>
+
+    <div id="send_message_loading" class="ui tiny hide modal send-message-result">
+        <div class="ui inverted medium text loader">Envoi du message en cours...</div>
+    </div>
+    <div id="send_message_error" class="ui tiny modal send-message-result">
+        <div class="content">
+            <span class="icon-symb"><i class="times circle red icon"></i></span>
+            <p class="message">Le message n'a pas pu etre envoyer !</p>
+        </div>
+    </div>
+    <div id="send_message_success" class="ui tiny modal send-message-result">
+        <div class="content">
+            <span class="icon-symb"><i class="check circle green icon"></i></span>
+            <p class="message">Le message a été envoyé avec success !</p>
+        </div>
+    </div>
+
+    <div class="ui center popup"></div>
+
     <script src="src/main.js"></script>
+    <script defer src="src/actions.js"></script>
     <script src="src/responsive.js"></script>
     <script>
-        document.querySelector('.button-show-portfolio').onclick = () => {
-            location.replace('#portfolio');
+        function title_popup(event) {
+            document.querySelector('.ui.popup').textContent = event.target.getAttribute('title');
+            event.target.setAttribute('data-position', 'bottom center');
+
+            $(`.${event.target.classList['value'].replace(' ', '.')}`)
+                .popup({
+                    popup: '.ui.popup'
+                })
+                .popup('show')
+            ;
+
+            console.log(
+                'title:', event.target.getAttribute('title'), 
+                '\nclassList:', event.target.classList['value'].replace(' ', '.'),
+                '\npopup content:', document.querySelector('.ui.popup').textContent
+            );
         }
-        document.querySelector('.button-show-services').onclick = () => {
-            location.replace('#services');
-        }
+
+        document.getElementById("contact_us").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche le formulaire d'être soumis normalement
+
+            // loading animation
+            $('#send_message_loading')
+                .modal('show');
+                
+            // Récupération des données du formulaire
+            var formData = new FormData(this);
+
+            // Envoi des données à l'aide de l'API Fetch
+            fetch('https://lupilabo.000webhostapp.com/mailsystem/reception.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json()) // Vous pouvez utiliser .text() si la réponse est du texte plutôt que du JSON
+            .then(data => {
+                // Traitement de la réponse
+                // console.log(data);
+
+                $('#send_message_success')
+                    .modal('show');
+            })
+            .catch(error => {
+                // console.error('Erreur lors de l\'envoi du formulaire:', error);
+
+                $('#send_message_error')
+                    .modal('show');
+            });
+        });
     </script>
 </body>
 </html>

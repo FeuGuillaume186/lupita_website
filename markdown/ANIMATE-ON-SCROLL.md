@@ -1,3 +1,5 @@
+# Animate on scroll
+
 Vous pouvez utiliser l'API Intersection Observer en JavaScript pour détecter quand les éléments de la page deviennent visibles à mesure que vous faites défiler la page. En fonction de la visibilité, vous pouvez appliquer des animations pour faire apparaître les éléments. Voici un exemple simple :
 
 HTML :

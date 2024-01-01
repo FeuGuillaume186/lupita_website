@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* @font-face {
+  font-family: 'Inter'; 
+  src: url('../assets/fonts/Inter/Inter-VariableFont_slnt_wght.ttf') format('ttf'); 
+} */
+
 :root {
     --foreground: #FFF;
     --header-background: #212226;
@@ -8,13 +13,14 @@
     --about-background: #2B2C31;
     --about-color: #868A98;
     --services-background: #36383E;
-	--services-skill-background: #454850;
+    --services-skill-background: #454850;
     --footer-background: #212226;
-	--footer-dev-info-background: #2F3035;
-	--footer-dev-text-info-background: #3D3E43;
-	--nav-foreground-item: #D4D4D4;
-	--nav-foreground-item-hover: #73FF92;
-	--nav-background: #2D2E33;
+    --footer-dev-info-background: #2F3035;
+    --footer-dev-text-info-background: #3D3E43;
+    --nav-foreground-item: #D4D4D4;
+    --nav-foreground-item-hover: #73FF92;
+    --nav-background: #2D2E33;
+    --modal-background: #25262A;
 
     --portfolio-reflection-image-gradient: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #25262A 68.75%);
 
@@ -45,7 +51,8 @@ body.light {
 	--footer-dev-text-info-background: #ebebeb;
 	--nav-foreground-item: #272727;
 	--nav-foreground-item-hover: #31d154;
-	--nav-background: #d6d6d6;
+	--nav-background: #ffffff;
+  --modal-background: hsl(228, 6%, 75%);
 
     --portfolio-reflection-image-gradient: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #ffffff 68.75%);
 
@@ -60,6 +67,7 @@ body.light {
 }
 
 * {
+	/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-style: normal;
     line-height: normal;
@@ -137,4 +145,45 @@ html {
   50% {
     opacity: 1;
   }
+}
+
+
+
+.send-message-result {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.send-message-result .content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem;
+  width: 30rem;
+  height: 21rem;
+  
+  background: transparent !important;
+}
+
+.send-message-result .message {
+  color: #FFF;
+}
+
+.send-message-result .icon-symb {
+  font-size: 5rem;
+}
+
+.send-message-result .close.icon {
+  position: absolute !important;
+  top: 2px !important;
+  right: 2px !important;
+  color: var(--foreground);
+}
+
+.ui.popup,
+.ui.popup::before,
+.ui.popup::after {
+  color: var(--foreground) !important;
+  background: var(--home-background) !important;
+  border: none !important;
 }

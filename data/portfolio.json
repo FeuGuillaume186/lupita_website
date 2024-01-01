@@ -1,0 +1,282 @@
+[
+    {
+        "id": "portfolio_03",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Jaison",
+        "label": "Graphic Designer Portfolio Website",
+        "about": {
+            "resume": "A Graphic Designer",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_03",
+                "url": "../assets/images/portfolio/portfolio_img_03.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_03_center",
+                "url": "../assets/images/portfolio/portfolio_img_03.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_03_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_03.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_1", "mem_3"
+        ]
+    },
+    {
+        "id": "portfolio_04",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Daniel Stephen",
+        "label": "Full Stack Developer Portfolio Website",
+        "about": {
+            "resume": "A Full Stack Developer",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_04",
+                "url": "../assets/images/portfolio/portfolio_img_04.jpg",
+                "backgroundPos": "top"
+            }
+        ],
+        "authors": [
+            "mem_1"
+        ]
+    },
+    {
+        "id": "portfolio_07",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Bioza",
+        "label": "Graphic Designer Portfolio Website",
+        "about": {
+            "resume": "Emma Watson - Graphic Designer",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_07",
+                "url": "../assets/images/portfolio/portfolio_img_07.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_07_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_07.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_1", "mem_3"
+        ]
+    },
+    {
+        "id": "portfolio_18",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Delicious.",
+        "label": "Restaurent Website",
+        "about": {
+            "resume": "Enjoy your healthy delicious food",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_18",
+                "url": "../assets/images/portfolio/portfolio_img_18.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_18_center",
+                "url": "../assets/images/portfolio/portfolio_img_18.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_18_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_18.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_2"
+        ]
+    },
+    {
+        "id": "portfolio_19",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Spiozek",
+        "label": "Restaurent Website",
+        "about": {
+            "resume": "Hmmmm...Burger Queen",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_19",
+                "url": "../assets/images/portfolio/portfolio_img_19.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_19b",
+                "url": "../assets/images/portfolio/portfolio_img_19b.jpg",
+                "backgroundPos": "top"
+            }
+        ],
+        "authors": [
+            "mem_4"
+        ]
+    },
+    {
+        "id": "portfolio_11",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Genz.",
+        "label": "Graphic Designer Portfolio Website",
+        "about": {
+            "resume": "Brian Clark - Graphic Designer",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_11",
+                "url": "../assets/images/portfolio/portfolio_img_11.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_11_center",
+                "url": "../assets/images/portfolio/portfolio_img_11.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_11_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_11.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_1", "mem_3"
+        ]
+    },
+    {
+        "id": "portfolio_15",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Davis",
+        "label": "Front Coder Portfolio Website",
+        "about": {
+            "resume": "Eduard Davis - Frontend Coder",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_15",
+                "url": "../assets/images/portfolio/portfolio_img_15.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_15_center",
+                "url": "../assets/images/portfolio/portfolio_img_15.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_15_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_15.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_2", "mem_3"
+        ]
+    },
+    {
+        "id": "portfolio_12",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Delicious.",
+        "label": "Restaurent Website",
+        "about": {
+            "resume": "Lunch - Dinner - Drinks",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_12",
+                "url": "../assets/images/portfolio/portfolio_img_12.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_12_center",
+                "url": "../assets/images/portfolio/portfolio_img_12.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_12_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_12.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_3"
+        ]
+    },
+    {
+        "id": "portfolio_17",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Delicious.",
+        "label": "Restaurent Website",
+        "about": {
+            "resume": "Lunch - Dinner - Drinks",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_17",
+                "url": "../assets/images/portfolio/portfolio_img_17.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_17_center",
+                "url": "../assets/images/portfolio/portfolio_img_17.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_17_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_17.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_1", "mem_2"
+        ]
+    },
+    {
+        "id": "portfolio_01",
+        "icon_url": "../assets/images/spin.png",
+        "title": "Amangoe.",
+        "label": "Front Coder Portfolio Website",
+        "about": {
+            "resume": "Lunch - Dinner - Drinks",
+            "full_resume": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui."
+        },
+        "images": [
+            {
+                "id": "portfolio_img_01",
+                "url": "../assets/images/portfolio/portfolio_img_01.jpg",
+                "backgroundPos": "top"
+            },
+            {
+                "id": "portfolio_img_01_center",
+                "url": "../assets/images/portfolio/portfolio_img_01.jpg",
+                "backgroundPos": "center"
+            },
+            {
+                "id": "portfolio_img_01_bottom",
+                "url": "../assets/images/portfolio/portfolio_img_01.jpg",
+                "backgroundPos": "bottom"
+            }
+        ],
+        "authors": [
+            "mem_1", "mem_3", "mem_2"
+        ]
+    }
+]

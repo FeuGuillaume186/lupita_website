@@ -1,0 +1,130 @@
+[
+    {
+        "id": "mem_1",
+        "name": "Guillaume M. M.",
+        "skill": "Frontend developer",
+        "photo": "assets/images/developers/llaume.jpg",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis pellentesque felis, ac feugiat eros sodales ut. Curabitur fermentum erat mi, ut dignissim ipsum ultricies at. Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui.",
+        "skills": {
+            "spoken_languages": [
+                "Français", "Anglais"
+            ],
+            "competances": [
+                {
+                    "tech": "html",
+                    "icon_url": "assets/images/skills/html.png",
+                    "percent": "67"
+                },
+                {
+                    "tech": "css",
+                    "icon_url": "assets/images/skills/css.png",
+                    "percent": "98"
+                },
+                {
+                    "tech": "js",
+                    "icon_url": "assets/images/skills/js.png",
+                    "percent": "76"
+                }
+            ],
+            "portfolio": [
+                "img_01.png"
+            ]
+        }
+    },
+    {
+        "id": "mem_2",
+        "name": "Julia Alexia",
+        "skill": "Expert SEO",
+        "photo": "assets/images/developers/caesar.jpg",
+        "about": "Nunc facilisis pellentesque felis, ac feugiat eros sodales ut. Curabitur fermentum erat mi, ut dignissim ipsum ultricies at. Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui.",
+        "skills": {
+            "spoken_languages": [
+                "Français", "Anglais"
+            ],
+            "competances": [
+                {
+                    "tech": "html",
+                    "icon_url": "assets/images/skills/html.png",
+                    "percent": "67"
+                },
+                {
+                    "tech": "css",
+                    "icon_url": "assets/images/skills/css.png",
+                    "percent": "98"
+                },
+                {
+                    "tech": "js",
+                    "icon_url": "assets/images/skills/js.png",
+                    "percent": "76"
+                }
+            ],
+            "portfolio": [
+                "img_01.png"
+            ]
+        }
+    },
+    {
+        "id": "mem_3",
+        "name": "Jade Lasu Yanzola",
+        "skill": "Backend Developer",
+        "photo": "assets/images/developers/jadebravo6.jpg",
+        "about": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui.",
+        "skills": {
+            "spoken_languages": [
+                "Français", "Anglais", "Lingala"
+            ],
+            "competances": [
+                {
+                    "tech": "html",
+                    "icon_url": "assets/images/skills/html.png",
+                    "percent": "67"
+                },
+                {
+                    "tech": "css",
+                    "icon_url": "assets/images/skills/css.png",
+                    "percent": "98"
+                },
+                {
+                    "tech": "js",
+                    "icon_url": "assets/images/skills/js.png",
+                    "percent": "76"
+                }
+            ],
+            "portfolio": [
+                "img_01.png"
+            ]
+        }
+    },
+    {
+        "id": "mem_4",
+        "name": "Isabella Moner",
+        "skill": "Photograph",
+        "photo": "assets/images/developers/isabella.webp",
+        "about": "Vivamus tempor tristique maximus. Nulla volutpat fermentum neque. Proin sed nulla vitae purus sodales sagittis at ac dui.",
+        "skills": {
+            "spoken_languages": [
+                "Français", "Anglais", "Espagnol"
+            ],
+            "competances": [
+                {
+                    "tech": "html",
+                    "icon_url": "assets/images/skills/html.png",
+                    "percent": "67"
+                },
+                {
+                    "tech": "css",
+                    "icon_url": "assets/images/skills/css.png",
+                    "percent": "98"
+                },
+                {
+                    "tech": "js",
+                    "icon_url": "assets/images/skills/js.png",
+                    "percent": "76"
+                }
+            ],
+            "portfolio": [
+                "assets/images/portfolio/portfolio_img_19b.jpg"
+            ]
+        }
+    }
+]

@@ -66,6 +66,19 @@
             transform: translate(calc(50vw - 12rem), -600px);
             background: var(--home-background);
         }
+
+        #services, #portfolio {
+            padding: 1;
+        }
+
+        /* #services .title {
+            padding: 8rem;
+            padding-bottom: 0;
+        }
+
+        #services::before {
+            display: none;
+        } */
     }
 
     @media screen and (max-width: 1024px) {
