@@ -232,7 +232,9 @@
     list-style: none;
     overflow-y: scroll;
     height: 23.5rem;
+    width: fit-content;
 
+    border-radius: 0.625rem;
     /* border: 1px solid red; */
 }
 

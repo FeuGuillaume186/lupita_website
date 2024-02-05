@@ -52,7 +52,7 @@ body.light {
 	--nav-foreground-item: #272727;
 	--nav-foreground-item-hover: #31d154;
 	--nav-background: #ffffff;
-  --modal-background: hsl(228, 6%, 75%);
+  --modal-background: hsl(0, 0%, 100%);
 
     --portfolio-reflection-image-gradient: linear-gradient(0deg, rgba(37, 38, 42, 0.00) 0%, #ffffff 68.75%);
 
